@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 
 def start(update, context):
     update.message.reply_text(
-        "<b>Hi {} {} ! \n\nI'm <a href=\"tg://user?id=1451118099\">Dwindle</a> - A Simple URL shortener bot."
+        "<b>Hi {} {} ! \n\nI'm Simple URL shortener Bot."
         "\n\nSend me any link , I can short it for You."
         "\n\nHit </b>/help<b> to find out more about how to use me.</b>".format(update.effective_user.first_name, (
             emoji.emojize(":wave:", use_aliases=True))), parse_mode='html',
@@ -21,7 +21,7 @@ def start(update, context):
 
 
 def help(update, context):
-    update.message.reply_text("*Hey! My name is Dwindle.* "
+    update.message.reply_text("*Hey! My name is .* "
                               "\n\nI am a link shortener bot, here to help you to shorten your links!"
                               "\nI have lots of handy features to help You"
                               "\n\n*Helpful commands:*"
@@ -40,9 +40,9 @@ def aboutTheBot(update, context):
 
     keyboard = [
         [
-            telegram.InlineKeyboardButton((emoji.emojize(":loop:", use_aliases=True)) + "⚙CHANNEL⚙",
-                                          url="t.me/VKPROJECTS"),
-            telegram.InlineKeyboardButton("⚙GROUP⚙", callback_data='2'),
+            telegram.InlineKeyboardButton((emoji.emojize(":loop:", use_aliases=True)) + "🚸CHANNEL",
+                                          url="t.me/mizolibrary"),
+            telegram.InlineKeyboardButton("🚸GROUP", url='https://t.me/rsrtginfo'),
         ],
         [telegram.InlineKeyboardButton((emoji.emojize(":bookmark:", use_aliases=True)) + "Add Me In Group",
                                        url="https://t.me/dwindle_Bot?startgroup=new")],
@@ -54,9 +54,9 @@ def aboutTheBot(update, context):
                               "\nI can handle links in different ways."
                               "\n\n<b>About Me :</b>"
                               "\n\n  - <b>Name</b>        : "
-                              "\n\n  - <b>Creator</b>      : @VKPROJECTS"
-                              "\n\n  - <b>Language</b>  : Python 3"
-                              "\n\n  - <b>Library</b>       : <a href=\"https://github.com/python-telegram-bot/python-telegram-bot/\">python-telegram-bot</a>"
+                              "\n\n  - <b>Creator</b>      : @rsrmusic"
+                              "\n\n  - <b>Language</b>  : English"
+                              "\n\n  - <b>Group</b>       : <a href=\"https://t.me/rsrtginfo/\">RSR TG info★</a>"
                               "\n\nIf you enjoy using me and want to help me survive, do donate with the /donate command - my creator will be very grateful! Doesn't have to be much - every little helps! Thanks for reading :)",
                               parse_mode='html', reply_markup=reply_markup, disable_web_page_preview=True)
 
